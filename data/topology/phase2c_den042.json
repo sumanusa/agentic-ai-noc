@@ -1,0 +1,93 @@
+{
+  "topology_id": "topology-phase2c-den042-v1",
+  "source": "synthetic-topology-fixture",
+  "coverage_status": "complete",
+  "known_gaps": [],
+  "elements": [
+    {
+      "element_id": "BH-7731",
+      "element_type": "backhaul",
+      "site_id": "DEN-042",
+      "source_record_id": "TOPO-ELEMENT-BH-7731",
+      "evidence_id": "ev-topology-phase2c-den042"
+    },
+    {
+      "element_id": "RTR-DEN-18",
+      "element_type": "router",
+      "site_id": "DEN-042",
+      "source_record_id": "TOPO-ELEMENT-RTR-DEN-18",
+      "evidence_id": "ev-topology-phase2c-den042"
+    },
+    {
+      "element_id": "IF-DEN-18-3",
+      "element_type": "interface",
+      "site_id": "DEN-042",
+      "source_record_id": "TOPO-ELEMENT-IF-DEN-18-3",
+      "evidence_id": "ev-topology-phase2c-den042"
+    },
+    {
+      "element_id": "CELL-DEN-042-A",
+      "element_type": "cell",
+      "site_id": "DEN-042",
+      "source_record_id": "TOPO-ELEMENT-CELL-DEN-042-A",
+      "evidence_id": "ev-topology-phase2c-den042"
+    },
+    {
+      "element_id": "BH-7731-B",
+      "element_type": "backhaul",
+      "site_id": "DEN-042",
+      "source_record_id": "TOPO-ELEMENT-BH-7731-B",
+      "evidence_id": "ev-topology-phase2c-den042"
+    },
+    {
+      "element_id": "RTR-DEN-19",
+      "element_type": "router",
+      "site_id": "DEN-042",
+      "source_record_id": "TOPO-ELEMENT-RTR-DEN-19",
+      "evidence_id": "ev-topology-phase2c-den042"
+    }
+  ],
+  "dependency_edges": [
+    {
+      "edge_id": "TOPO-EDGE-001",
+      "provider_element_id": "BH-7731",
+      "dependent_element_id": "RTR-DEN-18",
+      "relation": "provides_dependency_to",
+      "source_record_id": "TOPO-REL-BH7731-RTR18",
+      "evidence_id": "ev-topology-phase2c-den042"
+    },
+    {
+      "edge_id": "TOPO-EDGE-002",
+      "provider_element_id": "RTR-DEN-18",
+      "dependent_element_id": "IF-DEN-18-3",
+      "relation": "provides_dependency_to",
+      "source_record_id": "TOPO-REL-RTR18-IF183",
+      "evidence_id": "ev-topology-phase2c-den042"
+    },
+    {
+      "edge_id": "TOPO-EDGE-003",
+      "provider_element_id": "IF-DEN-18-3",
+      "dependent_element_id": "CELL-DEN-042-A",
+      "relation": "provides_dependency_to",
+      "source_record_id": "TOPO-REL-IF183-CELLA",
+      "evidence_id": "ev-topology-phase2c-den042"
+    },
+    {
+      "edge_id": "TOPO-EDGE-004",
+      "provider_element_id": "BH-7731-B",
+      "dependent_element_id": "RTR-DEN-19",
+      "relation": "provides_dependency_to",
+      "source_record_id": "TOPO-REL-BH7731B-RTR19",
+      "evidence_id": "ev-topology-phase2c-den042"
+    }
+  ],
+  "service_mappings": [
+    {
+      "mapping_id": "TOPO-SERVICE-MAP-001",
+      "service_id": "SVC-DEN-042-5G-ACCESS",
+      "served_element_id": "CELL-DEN-042-A",
+      "source_record_id": "TOPO-MAP-5G-ACCESS-CELLA",
+      "evidence_id": "ev-topology-phase2c-den042"
+    }
+  ]
+}
