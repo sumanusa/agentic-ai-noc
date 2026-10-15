@@ -1,0 +1,61 @@
+[
+  {
+    "source": "synthetic-alarm-feed",
+    "source_event_id": "SRC-EVT-DUP-1",
+    "source_record_id": "PHASE2D-ROW-DUP-1A",
+    "site": "DEN-042",
+    "element_id": "RTR-DEN-18",
+    "event_code": "BACKHAUL_LATENCY_HIGH",
+    "event_type": "threshold",
+    "severity": "major",
+    "lifecycle_state": "raised",
+    "occurred_at": "2026-10-14T10:00:00-06:00"
+  },
+  {
+    "source": "synthetic-alarm-feed",
+    "source_event_id": "SRC-EVT-DUP-1",
+    "source_record_id": "PHASE2D-ROW-DUP-1B",
+    "site": "DEN-042",
+    "element_id": "RTR-DEN-18",
+    "event_code": "BACKHAUL_LATENCY_HIGH",
+    "event_type": "threshold",
+    "severity": "major",
+    "lifecycle_state": "raised",
+    "occurred_at": "2026-10-14T10:02:00-06:00"
+  },
+  {
+    "source": "synthetic-alarm-feed",
+    "source_event_id": "SRC-EVT-CORR-2",
+    "source_record_id": "PHASE2D-ROW-CORR-2",
+    "site": "DEN-042",
+    "element_id": "RTR-DEN-18",
+    "event_code": "BACKHAUL_LATENCY_HIGH",
+    "event_type": "threshold",
+    "severity": "major",
+    "lifecycle_state": "raised",
+    "occurred_at": "2026-10-14T10:04:00-06:00"
+  },
+  {
+    "source": "synthetic-alarm-feed",
+    "source_event_id": "SRC-EVT-RELATED-3",
+    "source_record_id": "PHASE2D-ROW-RELATED-3",
+    "site": "DEN-042",
+    "element_id": "IF-DEN-18-3",
+    "event_code": "INTERFACE_ERRORS",
+    "event_type": "threshold",
+    "severity": "major",
+    "lifecycle_state": "raised",
+    "occurred_at": "2026-10-14T10:05:00-06:00"
+  },
+  {
+    "source": "synthetic-alarm-feed",
+    "source_record_id": "PHASE2D-ROW-UNIDENTIFIED",
+    "site": "DEN-042",
+    "element_id": "IF-DEN-18-3",
+    "event_code": "RADIO_LINK_DEGRADED",
+    "event_type": "threshold",
+    "severity": "minor",
+    "lifecycle_state": "raised",
+    "occurred_at": "2026-10-14T10:06:00-06:00"
+  }
+]

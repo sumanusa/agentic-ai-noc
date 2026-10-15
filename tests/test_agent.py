@@ -1,25 +1,25 @@
+"""Optional local-Ollama integration test; excluded from ordinary CI runs."""
+
+import os
+
+import pytest
+
 from app.graph import build_graph
 
 
-def test_den_042_agent_investigation():
+pytestmark = pytest.mark.skipif(
+    os.getenv("NOC_RUN_OLLAMA_INTEGRATION") != "1",
+    reason="set NOC_RUN_OLLAMA_INTEGRATION=1 to run the local Ollama integration",
+)
 
+
+def test_den_042_agent_investigation():
     incident = {
         "incident_id": "INC-2026-001",
         "site": "DEN-042",
         "technology": "5G",
         "severity": "SEV-2",
-        "description": (
-            "Customers are experiencing degraded 5G service "
-            "with elevated latency and packet loss."
-        ),
+        "description": "Degraded 5G service with elevated latency and packet loss.",
     }
-
-    graph = build_graph()
-
-    result = graph.invoke(incident)
-
-    assert result["incident_id"] == "INC-2026-001"
-    assert result["site"] == "DEN-042"
-    assert len(result["messages"]) > 0
-
-    
+    result = build_graph().invoke({"incident": incident})
+    assert result["assessment"].incident_id == "INC-2026-001"
