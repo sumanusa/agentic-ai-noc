@@ -1,0 +1,167 @@
+[
+  {
+    "source": "synthetic-alarm-feed",
+    "source_event_id": "SRC-EVT-100",
+    "source_record_id": "SRC-ROW-100-A",
+    "site": "DEN-042",
+    "element_id": "RTR-DEN-18",
+    "event_code": "BACKHAUL_LATENCY_HIGH",
+    "event_type": "threshold",
+    "severity": "major",
+    "lifecycle_state": "raised",
+    "occurred_at": "2026-10-14T10:00:00-06:00"
+  },
+  {
+    "source": "synthetic-alarm-feed",
+    "source_event_id": "SRC-EVT-100",
+    "source_record_id": "SRC-ROW-100-B",
+    "site": "DEN-042",
+    "element_id": "RTR-DEN-18",
+    "event_code": "BACKHAUL_LATENCY_HIGH",
+    "event_type": "threshold",
+    "severity": "major",
+    "lifecycle_state": "raised",
+    "occurred_at": "2026-10-14T10:02:00-06:00"
+  },
+  {
+    "source": "synthetic-alarm-feed",
+    "source_event_id": "SRC-EVT-100",
+    "source_record_id": "SRC-ROW-100-C",
+    "site": "DEN-042",
+    "element_id": "RTR-DEN-18",
+    "event_code": "BACKHAUL_LATENCY_HIGH",
+    "event_type": "threshold",
+    "severity": "major",
+    "lifecycle_state": "raised",
+    "occurred_at": "2026-10-14T10:05:00-06:00"
+  },
+  {
+    "source": "synthetic-alarm-feed",
+    "source_record_id": "SRC-ROW-FP-1",
+    "site": "DEN-042",
+    "element_id": "RTR-DEN-18",
+    "event_code": "INTERFACE_ERRORS",
+    "event_type": "threshold",
+    "severity": "minor",
+    "lifecycle_state": "raised",
+    "occurred_at": "2026-10-14T11:00:00-06:00"
+  },
+  {
+    "source": "synthetic-alarm-feed",
+    "source_record_id": "SRC-ROW-FP-2",
+    "site": "DEN-042",
+    "element_id": "RTR-DEN-18",
+    "event_code": "INTERFACE_ERRORS",
+    "event_type": "threshold",
+    "severity": "minor",
+    "lifecycle_state": "raised",
+    "occurred_at": "2026-10-14T11:04:00-06:00"
+  },
+  {
+    "source": "synthetic-alarm-feed",
+    "source_record_id": "SRC-ROW-RELATED-1",
+    "site": "DEN-042",
+    "element_id": "RTR-DEN-18",
+    "event_code": "BACKHAUL_LATENCY_HIGH",
+    "event_type": "threshold",
+    "severity": "major",
+    "lifecycle_state": "raised",
+    "occurred_at": "2026-10-14T11:10:00-06:00"
+  },
+  {
+    "source": "synthetic-alarm-feed",
+    "source_record_id": "SRC-ROW-RELATED-2",
+    "site": "DEN-042",
+    "element_id": "IF-DEN-18-3",
+    "event_code": "INTERFACE_ERRORS",
+    "event_type": "threshold",
+    "severity": "major",
+    "lifecycle_state": "raised",
+    "occurred_at": "2026-10-14T11:11:00-06:00"
+  },
+  {
+    "source": "synthetic-alarm-feed",
+    "source_record_id": "SRC-ROW-SEVERITY",
+    "site": "DEN-042",
+    "element_id": "RTR-DEN-18",
+    "event_code": "INTERFACE_ERRORS",
+    "event_type": "threshold",
+    "severity": "critical",
+    "lifecycle_state": "raised",
+    "occurred_at": "2026-10-14T11:12:00-06:00"
+  },
+  {
+    "source": "synthetic-alarm-feed",
+    "source_record_id": "SRC-ROW-LIFECYCLE",
+    "site": "DEN-042",
+    "element_id": "RTR-DEN-18",
+    "event_code": "INTERFACE_ERRORS",
+    "event_type": "threshold",
+    "severity": "minor",
+    "lifecycle_state": "cleared",
+    "occurred_at": "2026-10-14T11:13:00-06:00"
+  },
+  {
+    "source": "synthetic-alarm-feed",
+    "source_record_id": "SRC-ROW-FP-LATE",
+    "site": "DEN-042",
+    "element_id": "RTR-DEN-18",
+    "event_code": "INTERFACE_ERRORS",
+    "event_type": "threshold",
+    "severity": "minor",
+    "lifecycle_state": "raised",
+    "occurred_at": "2026-10-14T11:10:00-06:00"
+  },
+  {
+    "source": "synthetic-alarm-feed",
+    "source_record_id": "SRC-ROW-NO-TIME-1",
+    "site": "DEN-042",
+    "element_id": "RTR-DEN-18",
+    "event_code": "INTERFACE_ERRORS",
+    "event_type": "threshold",
+    "severity": "minor",
+    "lifecycle_state": "raised"
+  },
+  {
+    "source": "synthetic-alarm-feed",
+    "source_record_id": "SRC-ROW-NO-TIME-2",
+    "site": "DEN-042",
+    "element_id": "RTR-DEN-18",
+    "event_code": "INTERFACE_ERRORS",
+    "event_type": "threshold",
+    "severity": "minor",
+    "lifecycle_state": "raised"
+  },
+  {
+    "source": "synthetic-alarm-feed",
+    "source_record_id": "SRC-ROW-NO-ELEMENT",
+    "site": "DEN-042",
+    "event_code": "RADIO_LINK_DEGRADED",
+    "event_type": "threshold",
+    "severity": "major",
+    "lifecycle_state": "raised",
+    "occurred_at": "2026-10-14T11:15:00-06:00"
+  },
+  {
+    "source": "synthetic-alarm-feed",
+    "source_record_id": "SRC-ROW-NAIVE-TIME",
+    "site": "DEN-042",
+    "element_id": "RTR-DEN-18",
+    "event_code": "CLOCK_DRIFT",
+    "event_type": "threshold",
+    "severity": "minor",
+    "lifecycle_state": "raised",
+    "occurred_at": "2026-10-14T11:20:00"
+  },
+  {
+    "source": "synthetic-alarm-feed",
+    "source_record_id": "SRC-ROW-BAD-SEVERITY",
+    "site": "DEN-042",
+    "element_id": "RTR-DEN-18",
+    "event_code": "CLOCK_DRIFT",
+    "event_type": "threshold",
+    "severity": 2,
+    "lifecycle_state": "raised",
+    "occurred_at": "2026-10-14T11:21:00-06:00"
+  }
+]
