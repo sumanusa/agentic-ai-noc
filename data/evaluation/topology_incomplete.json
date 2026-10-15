@@ -1,0 +1,71 @@
+{
+  "topology_id": "topology-eval-incomplete-v1",
+  "source": "synthetic-evaluation-topology",
+  "coverage_status": "partial",
+  "known_gaps": [
+    "RTR-DEN-18 downstream dependency segment omitted in this scenario"
+  ],
+  "elements": [
+    {
+      "element_id": "BH-7731",
+      "element_type": "backhaul",
+      "site_id": "DEN-042",
+      "source_record_id": "TOPO-ELEMENT-BH-7731",
+      "evidence_id": "ev-topology-phase2c-den042"
+    },
+    {
+      "element_id": "RTR-DEN-18",
+      "element_type": "router",
+      "site_id": "DEN-042",
+      "source_record_id": "TOPO-ELEMENT-RTR-DEN-18",
+      "evidence_id": "ev-topology-phase2c-den042"
+    },
+    {
+      "element_id": "IF-DEN-18-3",
+      "element_type": "interface",
+      "site_id": "DEN-042",
+      "source_record_id": "TOPO-ELEMENT-IF-DEN-18-3",
+      "evidence_id": "ev-topology-phase2c-den042"
+    },
+    {
+      "element_id": "CELL-DEN-042-A",
+      "element_type": "cell",
+      "site_id": "DEN-042",
+      "source_record_id": "TOPO-ELEMENT-CELL-DEN-042-A",
+      "evidence_id": "ev-topology-phase2c-den042"
+    },
+    {
+      "element_id": "BH-7731-B",
+      "element_type": "backhaul",
+      "site_id": "DEN-042",
+      "source_record_id": "TOPO-ELEMENT-BH-7731-B",
+      "evidence_id": "ev-topology-phase2c-den042"
+    },
+    {
+      "element_id": "RTR-DEN-19",
+      "element_type": "router",
+      "site_id": "DEN-042",
+      "source_record_id": "TOPO-ELEMENT-RTR-DEN-19",
+      "evidence_id": "ev-topology-phase2c-den042"
+    }
+  ],
+  "dependency_edges": [
+    {
+      "edge_id": "TOPO-EDGE-001",
+      "provider_element_id": "BH-7731",
+      "dependent_element_id": "RTR-DEN-18",
+      "relation": "provides_dependency_to",
+      "source_record_id": "TOPO-REL-BH7731-RTR18",
+      "evidence_id": "ev-topology-phase2c-den042"
+    }
+  ],
+  "service_mappings": [
+    {
+      "mapping_id": "TOPO-SERVICE-MAP-001",
+      "service_id": "SVC-DEN-042-5G-ACCESS",
+      "served_element_id": "CELL-DEN-042-A",
+      "source_record_id": "TOPO-MAP-5G-ACCESS-CELLA",
+      "evidence_id": "ev-topology-phase2c-den042"
+    }
+  ]
+}

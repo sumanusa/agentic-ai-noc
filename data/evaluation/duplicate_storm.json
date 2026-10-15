@@ -1,0 +1,6 @@
+[
+  {"source":"eval-feed","source_event_id":"E-B1","source_record_id":"B-ROW-1","site":"DEN-042","element_id":"RTR-DEN-18","event_code":"PACKET_LOSS_HIGH","event_type":"threshold","severity":"major","lifecycle_state":"raised","occurred_at":"2026-10-14T10:00:00-06:00"},
+  {"source":"eval-feed","source_event_id":"E-B1","source_record_id":"B-ROW-2","site":"DEN-042","element_id":"RTR-DEN-18","event_code":"PACKET_LOSS_HIGH","event_type":"threshold","severity":"major","lifecycle_state":"raised","occurred_at":"2026-10-14T10:00:30-06:00"},
+  {"source":"eval-feed","source_event_id":"E-B1","source_record_id":"B-ROW-3","site":"DEN-042","element_id":"RTR-DEN-18","event_code":"PACKET_LOSS_HIGH","event_type":"threshold","severity":"major","lifecycle_state":"raised","occurred_at":"2026-10-14T10:01:00-06:00"},
+  {"source":"eval-feed","source_event_id":"E-B1","source_record_id":"B-ROW-4","site":"DEN-042","element_id":"RTR-DEN-18","event_code":"PACKET_LOSS_HIGH","event_type":"threshold","severity":"major","lifecycle_state":"raised","occurred_at":"2026-10-14T10:01:30-06:00"}
+]

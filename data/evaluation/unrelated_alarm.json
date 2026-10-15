@@ -1,0 +1,4 @@
+[
+  {"source":"eval-feed","source_event_id":"E-C1","source_record_id":"C-ROW-1","site":"DEN-042","element_id":"RTR-DEN-18","event_code":"PACKET_LOSS_HIGH","event_type":"threshold","severity":"major","lifecycle_state":"raised","occurred_at":"2026-10-14T10:00:00-06:00"},
+  {"source":"eval-feed","source_event_id":"E-C2","source_record_id":"C-ROW-2","site":"DEN-042","element_id":"CELL-DEN-042-A","event_code":"POWER_SUPPLY_WARNING","event_type":"threshold","severity":"minor","lifecycle_state":"raised","occurred_at":"2026-10-14T10:00:20-06:00"}
+]

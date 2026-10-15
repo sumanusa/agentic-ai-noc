@@ -1,0 +1,120 @@
+{
+  "suite_id": "agentic_noc_core_scenarios_v1",
+  "data_classification": "synthetic_fixture_only",
+  "cases": [
+    {
+      "id": "A",
+      "name": "correlated_fault",
+      "alarm_fixture": "../alarms/phase2d_integration_events.json",
+      "topology_fixture": "../topology/phase2c_den042.json",
+      "evidence_mode": "standard",
+      "model_mode": "supported",
+      "expected_correlated_pairs": [
+        [
+          "SRC-EVT-DUP-1",
+          "SRC-EVT-CORR-2"
+        ]
+      ],
+      "expected_duplicate_suppressed": 1,
+      "ticket_fixture": "degraded service ticket context",
+      "expected_assessment_status": "assessed",
+      "expected_path": [
+        "RTR-DEN-18",
+        "IF-DEN-18-3",
+        "CELL-DEN-042-A"
+      ],
+      "expected_correlation_group_count": 1
+    },
+    {
+      "id": "B",
+      "name": "duplicate_storm",
+      "alarm_fixture": "duplicate_storm.json",
+      "topology_fixture": "../topology/phase2c_den042.json",
+      "evidence_mode": "standard",
+      "model_mode": "supported",
+      "expected_correlated_pairs": [],
+      "expected_duplicate_suppressed": 3,
+      "expected_assessment_status": "assessed",
+      "expected_correlation_group_count": 0
+    },
+    {
+      "id": "C",
+      "name": "unrelated_alarm",
+      "alarm_fixture": "unrelated_alarm.json",
+      "topology_fixture": "../topology/phase2c_den042.json",
+      "evidence_mode": "standard",
+      "model_mode": "supported",
+      "expected_correlated_pairs": [],
+      "expected_duplicate_suppressed": 0,
+      "expected_assessment_status": "assessed",
+      "expected_correlation_group_count": 0
+    },
+    {
+      "id": "D",
+      "name": "incomplete_topology",
+      "alarm_fixture": "incomplete_topology_alarms.json",
+      "topology_fixture": "topology_incomplete.json",
+      "evidence_mode": "standard",
+      "model_mode": "low_confidence",
+      "expected_correlated_pairs": [],
+      "expected_duplicate_suppressed": 0,
+      "expected_assessment_status": "inconclusive",
+      "expected_service_impact_status": "unknown",
+      "expected_service_impact_reason": "topology_incomplete",
+      "expected_correlation_group_count": 0
+    },
+    {
+      "id": "E",
+      "name": "conflicting_evidence",
+      "alarm_fixture": "../alarms/phase2d_integration_events.json",
+      "topology_fixture": "../topology/phase2c_den042.json",
+      "evidence_mode": "conflict",
+      "model_mode": "conflict",
+      "expected_correlated_pairs": [
+        [
+          "SRC-EVT-DUP-1",
+          "SRC-EVT-CORR-2"
+        ]
+      ],
+      "expected_duplicate_suppressed": 1,
+      "ticket_fixture": "ticket says service normal while synthetic telemetry reports degradation",
+      "expected_assessment_status": "inconclusive",
+      "expected_conflict": true,
+      "ticket_context_injected_by_evaluator": true,
+      "expected_correlation_group_count": 1
+    },
+    {
+      "id": "F",
+      "name": "tool_and_provider_failure",
+      "alarm_fixture": "../alarms/phase2d_integration_events.json",
+      "topology_fixture": "../topology/phase2c_den042.json",
+      "evidence_mode": "standard",
+      "model_mode": "supported",
+      "expected_correlated_pairs": [
+        [
+          "SRC-EVT-DUP-1",
+          "SRC-EVT-CORR-2"
+        ]
+      ],
+      "expected_duplicate_suppressed": 1,
+      "subcases": [
+        "tool_timeout",
+        "provider_unavailable"
+      ],
+      "expected_correlation_group_count": 1
+    },
+    {
+      "id": "G",
+      "name": "low_confidence_insufficient_evidence",
+      "alarm_fixture": "insufficient_evidence_alarms.json",
+      "topology_fixture": "../topology/phase2c_den042.json",
+      "evidence_mode": "insufficient",
+      "model_mode": "insufficient",
+      "expected_correlated_pairs": [],
+      "expected_duplicate_suppressed": 0,
+      "expected_assessment_status": "inconclusive",
+      "expected_hypothesis_count": 0,
+      "expected_correlation_group_count": 0
+    }
+  ]
+}
